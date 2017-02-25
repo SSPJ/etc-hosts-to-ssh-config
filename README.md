@@ -1,6 +1,8 @@
 ###Purpose
 
-This will convert /etc/hosts style files into .ssh/config style files. If you frequently ssh to a large number of machines using the same username and ssh key, this can be useful for avoiding a) sending *all* of your ssh keys to the remote host until a match is found; b) needing to type username@ each time you ssh.
+This will convert **/etc/hosts** style files into **.ssh/config** style files.
+
+If you frequently ssh to a large number of machines using the same username and ssh key, this can be useful for avoiding **a)** sending *all* of your ssh keys to the remote host until a match is found; **b)** needing to type username@ each time you ssh.
 
 It skips comments and blank lines. It does not check if the syntax is valid. It does not check for duplicates. A more robust solution would be better implimented with configuration management (c.f. ansible).
 
